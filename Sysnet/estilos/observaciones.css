@@ -1,0 +1,96 @@
+/*~ 
+.---------------------------------------------------------------------------.
+|   Software: Sysnet     						                            |
+|   Copyright 2015 Laura Rosa laurarosa13@gmail.com							|
+|   Version: 1.0									                    	|
+| ------------------------------------------------------------------------- |
+| This program is free software; you can redistribute it and/or modify it	|
+| under the terms of the GNU General Public License as published by the		|
+| Free Software Foundation; either version 2 of the License, or (at your	|
+| option) any later version. This program is distributed in the hope that	| 
+| it will be useful, but WITHOUT ANY WARRANTY; without even the implied		|
+| warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 	| 
+| GNU General Public License for more details. 								|
+| You should have received a copy of the GNU General Public License along	|
+| with this program; if not, write to the Free Software Foundation, Inc.,	|
+| 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.".     			|
+'---------------------------------------------------------------------------'
+ */
+            .clear{clear:left; font-size:0px;}
+		    .clear-r{clear:right; font-size:0px;}
+			.clear-b{clear:both; font-size:0px;}
+			.sep10{height:10px; width:1px;font-size:0px;}
+			.sep5{height:5px; width:1px;font-size:0px;}
+            body{
+                background-position: 0px 0px;
+                background-color: #FFFFFF;
+            }
+
+            #contenedor{
+                width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+			
+			.msj {
+				float:left;
+				width:585px;
+				height:15px;
+			}
+			
+			.cerrar {
+            	width: 15px;
+				height:15px;
+				text-align:right;	
+				float:left;		
+			}
+			
+			.cuadro-lista {
+				width:600px;
+				border: 1px solid #5AA8D8;
+			}
+
+			.cuadro-encabezado {
+				width:600px;
+				height:28px;
+				background: url('../images/cuadro_fondo.jpg') repeat-x;
+			}
+
+			.cuadro-titulo {
+				float:left;
+				font-family:Arial;
+				font-size:14px;
+				color:#1F5985;
+				line-height:120%;
+				font-weight:bold;
+				padding-top:5px;
+				padding-left:11px;
+				padding-right:11px;
+			}
+
+			.cuadro-detalles {
+				width:576px;
+				margin:auto;
+				font-family:Arial;
+				font-size:13px;
+				color:#646464;
+				line-height:120%;
+			}
+						
+			.dato1 {
+				float:left;
+				width:226px;
+				font-family:Arial;
+				font-size:13px;
+				color:#646464;
+				line-height:120%;
+			}
+			
+			.dato2 {
+				float:left;
+				width:350px;
+				font-family:Arial;
+				font-size:13px;
+				color:#646464;
+				line-height:120%;
+			}

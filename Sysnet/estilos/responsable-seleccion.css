@@ -1,0 +1,347 @@
+/*~ 
+.---------------------------------------------------------------------------.
+|   Software: Sysnet     						                            |
+|   Copyright 2015 Laura Rosa laurarosa13@gmail.com							|
+|   Version: 1.0									                    	|
+| ------------------------------------------------------------------------- |
+| This program is free software; you can redistribute it and/or modify it	|
+| under the terms of the GNU General Public License as published by the		|
+| Free Software Foundation; either version 2 of the License, or (at your	|
+| option) any later version. This program is distributed in the hope that	| 
+| it will be useful, but WITHOUT ANY WARRANTY; without even the implied		|
+| warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 	| 
+| GNU General Public License for more details. 								|
+| You should have received a copy of the GNU General Public License along	|
+| with this program; if not, write to the Free Software Foundation, Inc.,	|
+| 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.".     			|
+'---------------------------------------------------------------------------'
+ */
+			body{
+                background-position: 0px 0px;
+                background-color: #FFFFFF;
+            }
+
+            #contenedor{
+                width: 569px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+			
+			.cerrar {
+            	width: 15px;
+				height:15px;
+				text-align:right;	
+				float:left;		
+			}
+			
+			.asignar {
+            	width: 140px;
+				height:15px;
+				float:left;				
+			}
+			
+			.buscar {
+				float:left;
+				height:15px;
+				width:429px;
+			}
+			
+			.sep10{height:10px; width:1px;font-size:0px;}
+			.clear{clear:left; font-size:0px;}
+			.clear-r{clear:right; font-size:0px;}
+			.clear-b{clear:both; font-size:0px;}
+					   			
+			.cuadro-lista {
+				width:569px;
+				border: 1px solid #5AA8D8;
+			}
+
+			.cuadro-encabezado {
+				width:569px;
+				height:28px;
+				background: url('../images/cuadro_fondo.jpg') repeat-x;
+			}
+
+			.cuadro-titulo {
+				float:left;
+				font-family:Arial;
+				font-size:14px;
+				color:#1F5985;
+				line-height:120%;
+				font-weight:bold;
+				padding-top:5px;
+				padding-left:11px;
+				padding-right:11px;
+			}
+			
+			.cuadro-detalles {
+				width:569px;
+				height:24px;
+				background:url('../images/cuadro_detalles.jpg') repeat-x;
+			}
+			
+			.lista-detalles li {
+				float:left;
+				height:18px;
+				background: url('../images/separa_detalle.jpg') no-repeat;
+				padding-left:10px;
+				font-family:Arial;
+				font-size:13px;
+				color:#646464;
+				line-height:120%;
+				padding-top:4px;
+			}
+
+			.w87 { width:87px; }
+			.w120 { width:120px; }
+			.w117 { width:117px; }
+			.w130 { width:130px; }
+			.w140 { width:140px; }
+			.w150 { width:150px; }
+			.w160 { width:160px; }
+			.w170 { width:170px; }
+			.w200 { width:250px; }
+			.w202 { width:202px; }
+			.w204 { width:204px; }
+			.w280 { width:265px; }
+			.w250 { width:250px; }
+			.w290 { width:275px; }
+			.w300 { width:300px; }
+			
+			.check-all {
+				padding-top:2px;
+				padding-left:4px;
+				float:left;
+				border-top:1px solid #FFFFFF;
+				border-bottom:1px solid #FFFFFF;
+				height:20px;
+			}
+
+
+			.check-all-gris {
+				height:20px;
+				padding-top:2px;
+				padding-left:4px;
+				float:left;
+				border-top:1px solid #ECECEC;
+				border-bottom:1px solid #ECECEC;
+				background-color:#F6F6F6;
+			}
+			
+			.cuadro-resultados {
+				width:569px;
+			}
+
+			.lista-resultados li {
+				float:left;
+				height:20px;
+				padding-left:10px;
+				font-family:Arial;
+				font-size:13px;
+				color:#646464;
+				line-height:120%;
+				padding-top:4px;
+				line-height:120%;
+			}
+
+			.lista-resultados li a {
+				font-family:Arial;
+				font-size:13px;
+				color:#646464;
+				text-decoration:none;
+				line-height:120%;
+			}
+
+			.lista-resultados li a:hover {
+				color:#476CF8;
+			}
+
+			.fgris li {
+				border-top:1px solid #ECECEC;
+				border-bottom:1px solid #ECECEC;
+				background-color:#F6F6F6;
+				height:18px;
+			}
+			
+			.ico_editar a  {
+				float:left;
+				width:29px;
+				height:14px;
+   				text-indent: -9000%;
+				display:block;
+				background: url('../images/ico_editar.gif') no-repeat;
+			}
+
+			.ico_editar a:hover {
+				background-position: 0px -14px;
+			}
+
+			.ico_eliminar {
+				float:left;
+				width:29px;
+				height:14px;
+			}
+
+			.ico_eliminar a  {
+   			 	text-indent: -9000%;
+				display:block;
+				background: url('../images/ico_eliminar.gif') no-repeat;
+			}
+
+			.ico_eliminar a:hover {
+				background-position: 0px -14px;
+			}
+			.mostrando {
+				float:right;
+				font-family:Arial;
+				font-size:12px;
+				color:#1F5985;
+				line-height:120%;
+				padding-top:15px;
+				padding-bottom:15px;
+				padding-right:20px;
+			}
+			.botonera {
+				float:left;
+				margin-left:10px;
+			}
+
+			.anterior {
+				float:left;
+				width:102px;
+				height:28px;
+				margin-top:9px;
+    			text-indent: -9000%;
+				display:block;
+				background: url('../images/siguiente_anterior.jpg') no-repeat;
+				background-position: 0px -28px;
+			}
+
+			.anterior a {
+    			text-indent: -9000%;
+				display:block;
+				width:102px;
+				height:28px;
+				background: url('../images/siguiente_anterior.jpg') no-repeat;
+			}
+
+			.siguiente {
+				float:left;
+				width:102px;
+				height:28px;
+				margin-top:9px;
+				background: url('../images/siguiente_anterior.jpg') no-repeat;
+				background-position: -102px -28px;
+			}
+
+			.siguiente a {
+    			text-indent: -9000%;
+				display:block;
+				width:102px;
+				height:28px;
+				background: url('../images/siguiente_anterior.jpg') no-repeat;
+				background-position: -102px 0px;
+			}
+
+			.pagina {
+				float:left;
+				font-family:Arial;
+				font-size:12px;
+				color:#1F5985;
+				line-height:120%;
+				padding-left:10px;
+				padding-right:10px;
+				padding-top:12px;
+			}
+			
+			.nohay {
+				font-family:Arial;
+				font-size:12px;
+				color:#464646;
+				line-height:120%;
+				padding-top:20px;
+				padding-bottom:20px;
+				padding-left:12px;
+			}
+			.msj {
+				float:left;
+				width:554px;
+				height:15px;
+			}
+			.exito {
+				font-family:Arial;
+				font-size:12px;
+				color:#464646;
+				line-height:120%;
+			}
+			.exito span {
+				color:#00CC00;
+				font-weight:bold;
+			}
+			.error {
+				font-family:Arial;
+				font-size:12px;
+				color:#464646;
+				line-height:120%;
+			}
+
+			.error span {
+				color:#FF0000;
+				font-weight:bold;
+			}
+			
+			.txt-buscar {
+				float:left;
+				font-family:Arial;
+				font-size:12px;
+				color:#464646;
+				line-height:120%;
+				padding-top:7px;
+				padding-right:8px;
+			}
+			
+			.input-buscar {
+				float:left;
+				width:101px;
+				height:26px;
+				background: url('../images/input_buscar.jpg') no-repeat;
+			}
+			
+			.input-busc {
+				width:91px;
+				height:15px;
+				border:0px;
+				background:transparent;
+				font-family:Arial;
+				font-size:12px;
+				color:#3A3A3A;
+				padding:5px;
+			}
+			
+			.bt-buscar {
+				float:left;
+				padding-left:8px;
+			}
+			
+			.submit {
+				width:24px;
+				height:26px;
+			}
+			
+			.volver {
+				float:left;
+				padding-top:7px;
+				padding-left:12px;
+			}
+			
+			.volver a {
+				font-family:Arial;
+				font-size:12px;
+				color:#464646;
+				line-height:120%;
+				text-decoration:none;
+			}
+			
+			.volver a:hover {
+				color:#476CF8;
+			}

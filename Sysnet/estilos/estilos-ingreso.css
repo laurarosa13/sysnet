@@ -1,0 +1,181 @@
+/*~ 
+.---------------------------------------------------------------------------.
+|   Software: Sysnet     						                            |
+|   Copyright 2015 Laura Rosa laurarosa13@gmail.com							|
+|   Version: 1.0									                    	|
+| ------------------------------------------------------------------------- |
+| This program is free software; you can redistribute it and/or modify it	|
+| under the terms of the GNU General Public License as published by the		|
+| Free Software Foundation; either version 2 of the License, or (at your	|
+| option) any later version. This program is distributed in the hope that	| 
+| it will be useful, but WITHOUT ANY WARRANTY; without even the implied		|
+| warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 	| 
+| GNU General Public License for more details. 								|
+| You should have received a copy of the GNU General Public License along	|
+| with this program; if not, write to the Free Software Foundation, Inc.,	|
+| 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.".     			|
+'---------------------------------------------------------------------------'
+ */
+ 
+.clear{clear:left; font-size:0px;}
+.clear-b{clear:both; font-size:0px;}
+.sep10{height:10px; width:1px;font-size:0px;}
+.sep20{height:20px; width:1px;font-size:0px;}
+
+body{
+    background: url("../images/fondo.jpg") repeat-x;
+    background-color: #FFFFFF;
+}
+#contenedor{
+    width: 950px;
+    margin: auto;
+}
+
+#pie{
+    width:100%;
+	background: url('../images/fondo_pie.jpg') repeat-x;
+    height:146px;
+}
+
+#porta-pie{
+	background:url('../images/fondo_pie.jpg') repeat-x;
+	height:146px;
+    width:950px;
+    margin:auto;
+    position:relative;
+}
+
+#pie-centro {
+	width:950px;
+	margin:auto;
+}
+
+#encabezado {
+	height:165px;
+	width:950px;
+	margin:auto;
+}
+
+#logo {
+	width:387px;
+	height:115px;
+	margin-top:10px;
+	margin-left:15px;
+	float:left;
+}
+
+#conectar {
+	width:167px;
+	height:102px;
+	float:right;
+	margin-top:45px;
+}
+
+#centro {
+	width:315px;
+	margin:auto;
+	background:#E1E1E1;
+}
+
+#ingreso-top {
+	width:315px;
+	height:59px;
+	background: url('../images/top_ingreso.jpg') no-repeat;
+}
+
+#ingreso-pie {
+	width:315px;
+	height:4px;
+	font-size:0px;
+	background: url('../images/pie_ingreso.jpg') no-repeat;
+}
+
+#ingreso-centro {
+	width:315px;	
+}
+
+#ingreso-form {
+	width:285px;
+	margin:auto;
+	padding-top:10px;
+}
+
+.txt-campo {
+	font-family:Arial;
+	font-size:12px;
+	color:#3A3A3A;
+	line-height:120%;
+	padding-bottom:5px;
+}
+
+.txt-campo span {
+	color:#FF0000;
+	font-weight:bold;
+}
+
+.input-campo {
+	width:285px;
+	height:36px;
+	background: url('../images/fondo_input.jpg') no-repeat;
+}
+
+.input-1 {
+	width:275px;
+	height:26px;
+	border:0px;
+	background:transparent;
+	font-family:Arial;
+	font-size:12px;
+	color:#3A3A3A;
+	padding:5px;
+}
+
+.ingresar-campo {
+	width:90px;
+	height:28px;
+	float:left;
+}
+
+.linea {
+	height:2px;
+	width:285px;
+	background: #C1C1C1 url('../images/linea.jpg') repeat-x;
+	margin:auto;
+}
+
+.txt-recuperar {
+	width:285px;
+	margin:auto;
+	padding:15px 0px;
+	font-family:Arial;
+	font-size:12px;
+	color:#3A3A3A;
+	line-height:120%;
+}
+
+.txt-recuperar span {
+	font-weight:bold;
+}
+
+.txt-recuperar a {
+	font-family:Arial;
+	font-size:12px;
+	color:#3A3A3A;
+	line-height:120%;
+	text-decoration:none;
+}
+
+.txt-recuperar a:hover {
+	color:#476CF8;
+}
+
+.incorrectos-campo {
+	float:left;
+	width:195px;
+	height:21px;
+	font-family:Arial;
+	font-size:12px;
+	color:#FF0000;
+	line-height:120%;
+	padding-top:7px;
+}
