@@ -53,10 +53,12 @@ $conexion=conectar();
             <div class="b-txt"><label for="codigo">Código</label></div>
         	<div class="b-radio"><input type="radio" name="r1" value="2" id="serie" <?php if ((isset($r1)) AND ($r1 == 2)) { echo "checked"; } ?> /></div>
             <div class="b-txt"><label for="serie">Número de Caso</label></div>
+        	<div class="b-radio"><input type="radio" name="r1" value="3" id="numser" <?php if ((isset($r1)) AND ($r1 == 3)) { echo "checked"; } ?> /></div>
+            <div class="b-txt"><label for="numser">Número de Serie</label></div>
         	<div class="sep19h"></div>
             <div class="campo-input"><input type="text" name="buscar" class="input-2" maxlength="80" value="<?php if (isset($buscar)) { echo $buscar; } ?>" /></div>
 			<div class="bt-buscar"><input class="submit" title="Buscar" type="image" value="" src="../images/ico_lupa.jpg"/></div>
-            <?php if ($buscar != "") {?><div class="b-txt"><a href="index.php">> Mostrar el listado completo de solicitudes</a></div><?php } ?>
+            <?php if ($buscar != "") {?><div class="b-txt"><a href="index.php">> Listado completo</a></div><?php } ?>
         	<div class="clear"></div>
         </div>
         </form>
@@ -98,8 +100,8 @@ $conexion=conectar();
 			//para busqueda de la cadena
 			if (($r1 == 1) AND ($buscar != "")) { $filtro = "AND netbook_codigo like '%{$buscar}%'"; }
 			if (($r1 == 2) AND ($buscar != "")) { $filtro = "AND soporte_nro_caso like '%{$buscar}%'"; }
+			if (($r1 == 3) AND ($buscar != "")) { $filtro = "AND netbook_num_serie like '%{$buscar}%'"; }
 
-			
 			if ($estado != 0) {
 			$sql= "SELECT *,netbook_codigo,netbook_matricula_id,netbook_num_serie FROM soporte,netbooks WHERE soporte_netbook_id = netbook_id AND soporte_estado_id = {$estado} ORDER BY soporte_fecha_solicitud Asc";
 			} else {
@@ -234,7 +236,7 @@ $conexion=conectar();
     	});  
 	});
 	function buscarnet() {
-	if ((document.consultar.r1[0].checked == false) && (document.consultar.r1[1].checked == false))  {
+	if ((document.consultar.r1[0].checked == false) && (document.consultar.r1[1].checked == false) && (document.consultar.r1[2].checked == false))  {
 		alert("Error\nNo ha seleccionado como desea filtrar la búsqueda");
 		return false;
 	}
